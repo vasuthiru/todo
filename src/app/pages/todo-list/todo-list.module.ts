@@ -5,7 +5,9 @@ import { TodoListRoutingModule } from './todo-list-routing.module';
 import { TodoListComponent } from './todo-list.component';
 import { MatTableModule } from '@angular/material/table'
 import { MatIconModule } from '@angular/material/icon'
-import { MatTooltipModule } from '@angular/material/tooltip'
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatSnackBarModule } from '@angular/material/snack-bar'
+
 @NgModule({
   declarations: [TodoListComponent],
   imports: [
@@ -13,7 +15,8 @@ import { MatTooltipModule } from '@angular/material/tooltip'
     TodoListRoutingModule,
     MatTableModule,
     MatIconModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatSnackBarModule
   ]
 })
 export class TodoListModule { }

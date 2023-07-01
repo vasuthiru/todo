@@ -17,7 +17,7 @@
         <th mat-header-cell *matHeaderCellDef> Actions </th>
         <td mat-cell *matCellDef="let element">
             <span><mat-icon matTooltip="Edit" (click)="editRecord(element)">edit</mat-icon></span> &nbsp;
-            <span><mat-icon matTooltip="Delete">delete</mat-icon></span>
+            <span><mat-icon matTooltip="Delete" (click)="deleteRecord(element)">delete</mat-icon></span>
         </td>
       </ng-container>
   
