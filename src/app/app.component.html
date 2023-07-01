@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="navbar">
+    <mat-toolbar>    
+      <span>Todo Sample</span>
+      <span class="example-spacer"></span>
+      <div class="routes">
+          <div class="route">
+            <a mat-button routerLink="list" routerLinkActive="active">Todo List</a>
+          </div>
+          <div class="route">
+            <a mat-button routerLink="add-list" routerLinkActive="active">Add Todo</a>
+          </div>
+      </div>
+    </mat-toolbar>
+  </div>
+  <div class="main-content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

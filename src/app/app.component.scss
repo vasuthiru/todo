@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .navbar {
+    height: 60px;
+    align-items: center;
+    display: flex;
+    background-color: rgb(234, 161, 25);
+    border-bottom: 1px solid rgb(183, 158, 155);
+  }
+  .main-content{
+    padding: 16px;
+    display: flex;
+    flex: auto;
+  }
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+.routes {
+  display: flex;
+}
