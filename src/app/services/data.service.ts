@@ -18,12 +18,15 @@ export class DataService {
 
   createRecord(item: Todo) {
     item.id = ++this.nextId;
-
-    //Update database
     this.todos.push(item);
     this._todo$.next(Object.assign([], this.todos));
   }
 
+  editRecord(item: Todo){
+    //Update database
+    const indx = this.todos.findIndex(todoItem=>todoItem.id===item.id)  
+    this.todos.splice(indx, 1, item);
+  }
   deleteRecord(id: number) {
     this.todos.forEach((t, i) => {
       if (t.id === id) {
